@@ -50,7 +50,7 @@ public class HanWeaponClear : BasePlugin
 
     private HookResult OnPlayerDeath(EventPlayerDeath @event, GameEventInfo info)
     {
-        if(CFG.PlayerDeathClear) //回合开始 清理1次是否开启 应用场景为清理 地面上有武器的地图 令地图开局武器消失
+        if(CFG.PlayerDeathClear) //是否开启玩家死亡自动清理
         {
             RemoveWeaponsOnTheGround();
         }
